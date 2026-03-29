@@ -4,213 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Candy LinkBio</title>
+<title>Candy Shop</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
-/* ===== พื้นหลัง ===== */
 body{
-margin:0;
-font-family:'Kanit',sans-serif;
-background:linear-gradient(180deg,#ffc1dd,#ffe6f2,#ffffff);
-text-align:center;
-color:#444;
-overflow-x:hidden;
-}
-
-/* ===== กล่องหลัก ===== */
-.container{
-position:relative;
-max-width:420px;
-margin:auto;
-padding:38px 24px;
-
-background:rgba(255,255,255,0.82);
-backdrop-filter:blur(14px);
-
-border-radius:28px;
-border:1px solid rgba(255,192,203,.35);
-
-box-shadow:
-0 10px 30px rgba(255,105,180,.15),
-0 0 25px rgba(255,182,193,.15);
-
-margin-top:40px;
-margin-bottom:40px;
-
-animation:pageReveal 1s ease;
-}
-
-/* ===== เปิดเว็บ ===== */
-@keyframes pageReveal{
-0%{
-opacity:0;
-transform:translateY(40px) scale(.96);
-filter:blur(8px);
-}
-100%{
-opacity:1;
-transform:translateY(0) scale(1);
-filter:blur(0);
-}
-}
-
-/* ===== ONLINE STATUS ===== */
-.online-status{
-position:absolute;
-top:18px;
-left:22px;
-
-background:rgba(255,255,255,.9);
-padding:6px 12px;
-border-radius:20px;
-font-size:12px;
-font-weight:500;
-
-display:flex;
-align-items:center;
-gap:6px;
-
-box-shadow:0 4px 12px rgba(0,0,0,.08);
-}
-
-.dot{
-width:8px;
-height:8px;
-border-radius:50%;
-}
-
-.online{ background:#22c55e; }
-.offline{ background:#a3a3a3; }
-
-.pulse{
-animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-0%{box-shadow:0 0 0 0 rgba(34,197,94,.6);}
-70%{box-shadow:0 0 0 8px rgba(34,197,94,0);}
-100%{box-shadow:0 0 0 0 rgba(34,197,94,0);}
-}
-
-/* ===== โปรไฟล์ ===== */
-.profile{
-animation:floatSoft 4s ease-in-out infinite;
-}
-
-.profile img{
-width:115px;
-height:115px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #fff;
-box-shadow:0 8px 20px rgba(255,105,180,.25);
-}
-
-@keyframes floatSoft{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-6px);}
+  margin:0;
+  font-family:'Kanit',sans-serif;
+  background:linear-gradient(180deg,#ffc1dd,#ffe6f2,#ffffff);
+  text-align:center;
+  color:#444;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
 }
 
 h1{
-margin:14px 0 6px;
-font-family:'Mali',cursive;
-color:#ff4fa3;
+  font-family:'Mali',cursive;
+  color:#ff4fa3;
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.bio{
-font-size:14px;
-margin-bottom:28px;
-opacity:.85;
-}
-
-/* ===== หัวข้อ ===== */
-.section{
-margin-top:28px;
-margin-bottom:10px;
-font-weight:600;
-font-size:14px;
-color:#ff4fa3;
-}
-
-/* ===== ปุ่ม ===== */
 .link{
-display:block;
-background:rgba(255,255,255,0.9);
-padding:16px;
-margin:12px 0;
-border-radius:18px;
-text-decoration:none;
-color:#444;
-font-weight:500;
-
-border:1px solid rgba(255,182,210,.35);
-backdrop-filter:blur(6px);
-
-box-shadow:0 6px 16px rgba(255,105,180,.18);
-
-opacity:0;
-transform:translateY(25px);
-animation:linkShow .7s ease forwards;
-}
-
-.link:nth-of-type(1){animation-delay:.3s;}
-.link:nth-of-type(2){animation-delay:.45s;}
-.link:nth-of-type(3){animation-delay:.6s;}
-.link:nth-of-type(4){animation-delay:.75s;}
-.link:nth-of-type(5){animation-delay:.9s;}
-.link:nth-of-type(6){animation-delay:1.05s;}
-
-@keyframes linkShow{
-to{
-opacity:1;
-transform:translateY(0);
-}
+  display:inline-block;
+  background:#fff0f7;
+  padding:14px 28px;
+  border-radius:12px;
+  text-decoration:none;
+  color:#ff4fa3;
+  font-weight:600;
+  border:1px solid #ffb6d2;
+  transition:0.3s;
 }
 
 .link:hover{
-transform:translateY(-6px) scale(1.02);
-background:#fff0f7;
-box-shadow:0 14px 28px rgba(255,105,180,.28);
+  transform:scale(1.05);
+  background:#ffc1dd;
 }
 
-/* ===== footer ===== */
 .footer{
-margin-top:35px;
-font-size:12px;
-opacity:.6;
-animation:fadeFooter 1.5s ease;
+  margin-top:30px;
+  font-size:12px;
+  opacity:.6;
 }
-
-@keyframes fadeFooter{
-from{opacity:0;}
-to{opacity:.6;}
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<h1>Candy Shop</h1>
 
-</div>
-</div>
-
-<div class="section">บริการหลัก</div>
-
-
-<a class="link" https://www.canva.com/brand/join?token=ILlO--fsYxnu3E1slYnr_Q&referrer=team-invite" target="_blank">
-ดูสินค้า
+<a class="link" href="https://www.canva.com/brand/join?token=ILlO--fsYxnu3E1slYnr_Q&referrer=team-invite" target="_blank">
+  ดูสินค้า
 </a>
 
-
 <div class="footer">
-© 2026 Candy Shop — LinkBio
+  © 2026 Candy Shop — LinkBio
 </div>
-
 
 </body>
 </html>
