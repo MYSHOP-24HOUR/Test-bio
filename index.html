@@ -16,29 +16,56 @@ body{
   text-align:center;
   color:#444;
   display:flex;
-  flex-direction:column;
   justify-content:center;
   align-items:center;
   min-height:100vh;
+  padding:20px;
 }
 
+.container{
+  max-width:420px;
+}
+
+/* โลโก้ */
+.logo{
+  width:90px;
+  margin-bottom:10px;
+}
+
+/* ชื่อร้าน */
 h1{
   font-family:'Mali',cursive;
   color:#ff4fa3;
-  font-size:28px;
+  margin:10px 0;
+}
+
+/* ข้อความสำเร็จ */
+.success{
+  font-size:15px;
+  line-height:1.6;
   margin-bottom:20px;
 }
 
+/* รูปสินค้า */
+.preview{
+  width:100%;
+  border-radius:14px;
+  margin:15px 0;
+  box-shadow:0 6px 18px rgba(255,105,180,.2);
+}
+
+/* ปุ่ม */
 .link{
-  display:inline-block;
+  display:block;
   background:#fff0f7;
-  padding:14px 28px;
-  border-radius:12px;
+  padding:16px;
+  border-radius:14px;
   text-decoration:none;
   color:#ff4fa3;
   font-weight:600;
   border:1px solid #ffb6d2;
-  transition:0.3s;
+  transition:.3s;
+  margin-top:10px;
 }
 
 .link:hover{
@@ -46,24 +73,73 @@ h1{
   background:#ffc1dd;
 }
 
-.footer{
-  margin-top:30px;
+/* วิธีใช้งาน */
+.guide{
+  font-size:13px;
+  opacity:.85;
+  margin-top:20px;
+  line-height:1.7;
+}
+
+/* หมายเหตุ */
+.note{
   font-size:12px;
-  opacity:.6;
+  opacity:.65;
+  margin-top:10px;
+}
+
+/* footer */
+.footer{
+  margin-top:25px;
+  font-size:12px;
+  opacity:.7;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Happy2home</h1>
+<div class="container">
 
-<a class="link" href="https://www.canva.com/brand/join?token=ILlO--fsYxnu3E1slYnr_Q&referrer=team-invite" target="_blank">
-  ดูสินค้า
-</a>
+  <!-- ✅ โลโก้ร้าน (เปลี่ยนลิงก์รูปได้) -->
+  <img src="#" class="logo">
 
-<div class="footer">
-  𝖫𝗂𝗇𝖾 : @𝟥𝟪𝟣𝖽𝗃𝗃𝗏𝖾(มีแอดคั้บบ)
+  <!-- ชื่อร้าน -->
+  <h1>Happy2home</h1>
+
+  <!-- ข้อความสำเร็จ -->
+  <p class="success">
+  ✅ ชำระเงินสำเร็จแล้ว<br>
+  กดปุ่มด้านล่างเพื่อเข้าใช้งาน Canva Pro ได้เลยค่ะ
+  </p>
+
+  <!-- ✅ รูป Canva (จะลบออกก็ได้) -->
+  <img src="#" class="preview">
+
+  <!-- ปุ่มเข้าใช้งาน -->
+  <a class="link"
+  href="https://www.canva.com/brand/join?token=ILlO--fsYxnu3E1slYnr_Q&referrer=team-invite"
+  target="_blank">
+  ✨ เริ่มใช้งาน Canva Pro
+  </a>
+
+  <!-- วิธีใช้งาน -->
+  <div class="guide">
+  📌 วิธีเข้าใช้งาน<br>
+  1. กดปุ่มด้านบน<br>
+  2. ล็อกอินบัญชี Canva<br>
+  3. กด Join Team เพื่อเริ่มใช้งาน
+  </div>
+
+  <p class="note">
+  * หากกดไม่ได้ ให้เปิดผ่าน Safari หรือ Chrome
+  </p>
+
+  <!-- ติดต่อ -->
+  <div class="footer">
+  Line : @381djjve (มีแอดคั้บบ)
+  </div>
+
 </div>
 
 </body>
